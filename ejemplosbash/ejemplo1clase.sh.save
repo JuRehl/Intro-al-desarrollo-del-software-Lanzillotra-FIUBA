@@ -1,0 +1,26 @@
+#i/bin/bash
+
+if [ $# -lt i ]
+then
+	echo "Debe ingresar con parámetro el nombre del archivo"
+	exit
+fi
+echo "1-ver el contenido del archivo"
+echo "2-Editar el archivo con el editor nano"
+echo "3-ver los permisos del archivo"
+echo "*-salir"
+
+read a
+case $a in
+1)  echo "Ver contenido el archivo $1"
+    cat $1
+    ;;
+2)  echo "Editar el archivo $1 con el editor nano"
+    nano $1
+    ;;
+3)  echo "ver permisos del archivo $1"
+    ls -l $1
+    ;;
+4)  echo "Salir"
+   ;;
+esac
