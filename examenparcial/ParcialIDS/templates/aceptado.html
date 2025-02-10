@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+    {% block body %}
+   
+    <h1>Los datos son:</h1>
+    <div>
+       <ul>
+        {% for datos in lista %}
+            <li>{{ datos }}</li>
+        {% endfor %}
+       </ul>
+    </div>
+    
+    {% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ppt java</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+    <h1 id="titulo">Prueba Ppt</h1>
+    <div>
+        <form action="{{ url_for('hola') }}" method="post">
+            <label for="primeracadena">Ingrese una cadena</label>
+            <textarea type="text" id="first" name="primeracadena"></textarea>
+            <label for="segundacadena">Ingrese la segunda cadena</label>
+            <textarea type="text" id="second" name="segundacadena"></textarea>
+            <button id="boton">Listo</button>
+        </form>
+       </div>
+
+    <script src="{{ url_for('static', filename='js/pptjava.js', _external=True) }}"></script>
+</body>
+</html>

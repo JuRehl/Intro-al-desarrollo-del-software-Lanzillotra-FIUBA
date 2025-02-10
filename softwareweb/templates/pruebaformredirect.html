@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva página</title>
+</head>
+<body>
+    <h1>Hola {{ nombre }} {{ apellido }}</h1>
+    <h2>El nombre ingresado es {{ nombre }}</h2>
+    <h2>El apellido ingresado es {{ apellido }}</h2>
+    <ul> 
+        {% for nombres in lista%}
+            <li>Hola {{nombres}}</li>
+        {% endfor%}
+    </ul>
+    <h3> 
+        {% if user%}
+            Hello {{ user }}
+        {% else %}
+            Hello Stranger
+        {% endif %}
+    </h3>
+</body>
+</html>

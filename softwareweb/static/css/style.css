@@ -1,0 +1,33 @@
+body, button {
+    font-family: Cambria;
+    background-color: #BDBDBD;
+}
+.titulo {
+    margin-bottom: 1.5em;
+    color: black;
+}
+#productos, footer {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 2vh;
+}
+#boton-ver-mas {
+    font-size: 10px;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    margin-top: 3vh;
+}
+footer {
+    margin-top: 30px;
+    border-top: gray 2px solid;
+    color: gray
+}
+button:hover {
+    cursor: pointer;
+}
+#productos, button {
+    color: #616161(245, 64, 121);
+}

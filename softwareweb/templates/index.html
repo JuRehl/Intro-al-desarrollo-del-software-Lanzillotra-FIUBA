@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Taylor Swift Albums</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 class="titulo">All Taylor Swift discography</h1>
+    <div id="productos">
+        <h2 class="titulo">Albums </h2>
+        <ul id="lista-componentes">
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_the_tortured_poets_department-portada.jpg')}}">
+            <li>The tortured poets department</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/Midnights_-_Portada.webp')}}">
+            <li>Midnights</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_evermore-portada.jpg')}}">
+            <li>Evermore</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_folklore-portada.jpg')}}">
+            <li>Folklore</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_lover-portada.jpg')}}">
+            <li>Lover</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_reputation-portada.jpg')}}">
+            <li>Reputation</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_1989_taylors_version-portada.jpg')}}">
+            <li>1989 (Taylor's version)</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_red_taylors_version-portada.jpg')}}">
+            <li>Red (Taylor's version)</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_speak_now_taylors_version-portada.jpg')}}">
+            <li>Speak Now(Taylor's version)</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/taylor_swift_fearless_taylors_version-portada.jpg')}}">
+            <li>Fearless (Taylor's version)</li>
+            <img class="producto" width=""150 height="150" src="{{ url_for('static', filename='images/Taylor_Swift_Album_Portada.webp')}}">
+            <li>Taylor Swift</li>
+        </ul>
+        <form action="forms" method="GET">
+            <label for="Contraseña">Ingrese la contraseña</label>
+            <input type="password" id="Contraseña"name="Contraseña"/>
+            <br>
+            <input type="submit" />
+        </form>
+        <div></div>
+            <button id="boton-ver-mas">Ver más</button>
+    </div>
+    <footer>
+        <p>The Tortured Poets Department out 19th of April</p>
+        <p>Updated on {{ year }}</p>
+    </footer>
+    
+</body>
+</html>
